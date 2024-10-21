@@ -1,0 +1,25 @@
+
+h1 {
+    color: rgb(225, 255, 0);
+}
+
+dd {
+    color: rgb(225, 255, 0);
+    border: 10px solid rgb(226, 230, 176);
+}
+
+body {
+    background-color: blue;
+}
+
+dl {
+    color: rgb(225, 255, 0); font-family: Arial, Helvetica, sans-serif; font-weight: bold;
+}
+
+li {
+    color: rgb(225, 255, 0);
+}
+
+a {
+    color: rgb(225, 255, 0);
+}

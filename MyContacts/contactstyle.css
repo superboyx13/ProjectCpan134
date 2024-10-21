@@ -1,0 +1,15 @@
+body {
+    background-color: blue; 
+}
+
+table {
+    color: rgb(225, 255, 0); font-family: Arial, Helvetica, sans-serif; font-weight: bold;
+}
+
+td {
+    color: rgb(225, 255, 0); font-family: Arial, Helvetica, sans-serif; font-weight: bold;
+}
+
+caption {
+    color: rgb(225, 255, 0); font-family: Arial, Helvetica, sans-serif; font-weight: bold;
+}
