@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="projects.css">
+
+    </head>
+    <body>
+<button id="changeBackground">Change Background</button>
+
+<script>
+let colorIndex = 0;
+const colors = ["#FF5733", "#33FF57", "#5733FF", "#F3FF33", "#FF33A8", "#33FFF8"];
+
+document.getElementById('changeBackground').addEventListener('click', () => {
+    document.body.style.backgroundColor = colors[colorIndex];
+    colorIndex = (colorIndex + 1) % colors.length;
+});
+
+</script>
+
+    </body>
+</html>

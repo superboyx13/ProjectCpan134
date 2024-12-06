@@ -1,18 +1,48 @@
-p {color: rgb(225, 255, 0); font-family: Arial, Helvetica, sans-serif; font-weight: bold;}
+p {
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    margin: 10px 15px; 
+    border: 2px solid white; 
+    padding: 15px 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 h1 {
-    color: rgb(225, 255, 0);
+    color: white;
+    margin-bottom: 20px; 
 }
 
 h3 {
-    color: rgb(225, 255, 0);
+    color: white;
+    margin-bottom: 15px; 
+}
+
+h2 {
+    color: white;
+    margin-bottom: 15px; 
 }
 
 
 body {
-    background-color: blue;
+    background-color: #0b005e;
+    margin: 0;
+    padding: 0;
+    font: Arial; 
 }
 
 a {
-    color: rgb(225, 255, 0); font-family: Arial, Helvetica, sans-serif; font-weight: bold;
+    color: rgb(2, 116, 255);
+    font-family: Arial;
+    font-weight: bold;
+    margin: 5px; 
+}
+
+ul {
+    color: rgb(2, 116, 255);
+    font-family: Arial;
+    font-weight: bold;
+    margin: 5px; 
 }

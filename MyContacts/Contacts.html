@@ -5,13 +5,46 @@
     <title>Contact Me</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="contactstyle.css">
-<div>
+    <style>
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        input[type="submit"].active {
+            background-color: #3e8e41;
+        }
+
+        input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #f44336;
+            color: white;
+            margin-left: 10px;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+
 <body>
-    <form action="" method="post">
-        <table border="2">
-            <caption><b>Contact Me</b></caption>
+    <form onsubmit="showAlert()" method="post">
+        <table>
+            <caption>Contact Me</caption>
             <tr>
-                <th >Name</th>
+                <th>Name</th>
                 <th>Email</th>
                 <th>Phone</th>
                 <th>Message</th>
@@ -19,27 +52,42 @@
             <tr>
                 <td>
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="username">
+                    <input type="text" id="name" name="username" required>
                 </td>
                 <td>
                     <label for="email">Email:</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" name="email" required>
                 </td>
                 <td>
                     <label for="telephone">Phone Number:</label>
-                    <input type="tel" id="telephone">
+                    <input type="tel" id="telephone" name="phone" required>
                 </td>
                 <td>
-                    <textarea rows="4" cols="50" name="comment" form="usrform">
-                Enter Message Here.</textarea>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required>Enter your message here.</textarea>
                 </td>
             </tr>
         </table>
-        <input type="submit" value="submit">
-        <input type="reset" value="clear">
+        <div style="text-align: center;">
+            <input type="submit" value="Submit" id="submitButton">
+            <input type="reset" value="Clear">
+        </div>
     </form>
-</div>
+
+    <script>
+        function showAlert() {
+            alert("Your message has been submitted successfully!");
+        }
+
+        function changeColor(Hover) {
+            const button = document.getElementById('submitButton');
+            if (Hover) {
+                button.style.backgroundColor = '#3e8e41'; // Darker green on hover
+            } else {
+                button.style.backgroundColor = '#4CAF50'; // Original green color
+            }
+        }
+    </script>
 </body>
-</head>
 
 </html>

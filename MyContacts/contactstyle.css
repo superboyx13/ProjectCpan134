@@ -1,15 +1,98 @@
+
 body {
-    background-color: blue; 
+    background-color: #0b005e;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
 }
 
+
+
+
 table {
-    color: rgb(225, 255, 0); font-family: Arial, Helvetica, sans-serif; font-weight: bold;
+    color: rgb(2, 116, 255);
+    font-family: Arial;
+    font-weight: bold;
+    margin: 20px auto; 
+    padding: 20px
 }
 
 td {
-    color: rgb(225, 255, 0); font-family: Arial, Helvetica, sans-serif; font-weight: bold;
+    color: rgb(2, 116, 255);
+    font-family: Arial;
+    font-weight: bold;
+    padding: 15px; 
+    border: 1px solid white; 
+    text-align: center; 
+    margin: auto;
+}
+
+label{
+    padding: 20px;
+    margin: auto;
+}
+
+
+caption {
+    color: rgb(2, 116, 255);
+    font-family: Arial;
+    font-weight: bold;
+    margin-bottom: 10px; 
+    text-align: center; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0 40px 0; 
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
 }
 
 caption {
-    color: rgb(225, 255, 0); font-family: Arial, Helvetica, sans-serif; font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form {
+    max-width: 800px;
+    margin: auto;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="submit"].active {
+    background-color: #3e8e41;
+}
+
+input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f44336;
+    color: white;
+    margin-left: 10px;
+}
+
+input[type="reset"]:hover {
+    background-color: #d32f2f;
 }
